@@ -42,11 +42,11 @@ python3 mermaid_to_tikz.py location.mmd -o location.tex --arrow-length 1.5 --row
 
 <table>
   <tr>
-    <th width="50%">Mermaid Markdown</th>
-    <th width="50%">Rendered Output</th>
+    <th width="30%">Mermaid Markdown</th>
+    <th width="70%">Rendered Output</th>
   </tr>
   <tr>
-    <td valign="top" width="50%">
+    <td valign="top" width="10%">
       <pre><code>classDiagram
     direction BT
 
@@ -61,7 +61,7 @@ python3 mermaid_to_tikz.py location.mmd -o location.tex --arrow-length 1.5 --row
         - _request_json(str, dict~[str, str]~): dict$
     }
   </code></pre></td>
-   <td valign="top" width="100%">
+   <td valign="top" width="70%">
   <img src="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png" alt="Rendered Output" style="max-width: 100%;">
 </td>
   </tr>
