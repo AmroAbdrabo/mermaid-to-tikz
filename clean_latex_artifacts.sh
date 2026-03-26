@@ -7,4 +7,5 @@ find . -type f \( \
   -name "*.fls" -o \
   -name "*.aux" -o \
   -name "*.fdb_latexmk" \
+  -name "*.synctex.gz" \
 \) -delete
