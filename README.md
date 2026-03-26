@@ -60,7 +60,8 @@ python3 mermaid_to_tikz.py location.mmd -o location.tex --arrow-length 1.5 --row
         + __init__(str)
         - _request_json(str, dict~[str, str]~): dict$
     }
-    <td valign="top" width="50%">
+  </code></pre></td>
+   <td valign="top" width="100%">
   <img src="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png" alt="Rendered Output" style="max-width: 100%;">
 </td>
   </tr>
