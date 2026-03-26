@@ -1,0 +1,22 @@
+```mermaid
+classDiagram
+    direction BT
+
+    class MapsApiAdapter {
+        + get_place_name(float, float): str*
+        + get_travel_distance_and_time(tuple~[float, float]~, tuple~[float, float]~, str): tuple~[int, timedelta]~*
+    }
+
+    class GoogleMapsApiAdapter {
+        - _api_key : str
+
+        + \_\_init\_\_(str)
+        - _request_json(str, dict~[str, str]~): dict$
+        + get_place_name(float, float): str
+        + set_api_key(str): None
+        + get_travel_distance_and_time(tuple~[float, float]~, tuple~[float, float]~, str): tuple~[int, timedelta]~
+    }
+
+    GoogleMapsApiAdapter --|> MapsApiAdapter
+    MapsApiAdapter --|> ABC
+```
