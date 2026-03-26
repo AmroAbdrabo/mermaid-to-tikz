@@ -52,21 +52,16 @@ python3 mermaid_to_tikz.py location.mmd -o location.tex --arrow-length 1.5 --row
 
     class MapsApiAdapter {
         + get_place_name(float, float): str*
-        + get_travel_distance_and_time(tuple~[float, float]~, tuple~[float, float]~, str): tuple~[int, timedelta]~*
+        + get_travel_distance_and_time(..): tuple[int, timedelta]*
     }
 
     class GoogleMapsApiAdapter {
         - _api_key : str
         + __init__(str)
         - _request_json(str, dict~[str, str]~): dict$
-    }</code></pre>
-      <div><a href="assets/example.mmd"><code>assets/example.mmd</code></a></div>
-    </td>
-    <td valign="top" align="center" width="50%">
-      <a href="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png">
-        <img src="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png" alt="Rendered example diagram" width="100%">
-      </a>
-      <div><a href="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png"><code>assets/example.png</code></a></div>
-    </td>
+    }
+    <td valign="top" width="50%">
+  <img src="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png" alt="Rendered Output" style="max-width: 100%;">
+</td>
   </tr>
 </table>
