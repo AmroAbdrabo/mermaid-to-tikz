@@ -2,6 +2,38 @@
 
 `mermaid_to_tikz.py` converts a Mermaid `classDiagram` file into a standalone LaTeX/TikZ document.
 
+## Example
+
+<table>
+  <tr>
+    <td valign="top">
+      <pre><code>classDiagram
+    direction BT
+
+    class MapsApiAdapter {
+        + get_place_name(float, float): str*
+        + get_travel_distance_and_time(tuple~[float, float]~, tuple~[float, float]~, str): tuple~[int, timedelta]~*
+    }
+
+    class GoogleMapsApiAdapter {
+        - _api_key : str
+        + __init__(str)
+        - _request_json(str, dict~[str, str]~): dict$
+    }</code></pre>
+      <div><a href="assets/example.mmd"><code>assets/example.mmd</code></a></div>
+    </td>
+    <td valign="middle" align="center" width="60">
+      <strong>&rarr;</strong>
+    </td>
+    <td valign="top" align="center">
+      <a href="assets/example.pdf">
+        <img src="assets/example.pdf" alt="Rendered example PDF" width="420">
+      </a>
+      <div><a href="assets/example.pdf"><code>assets/example.pdf</code></a></div>
+    </td>
+  </tr>
+</table>
+
 ## Usage
 
 ```bash
