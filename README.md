@@ -3,13 +3,11 @@
 `mermaid_to_tikz.py` converts a Mermaid `classDiagram` file into a standalone LaTeX/TikZ document.
 
 ## Usage
-
 ```bash
 python3 mermaid_to_tikz.py INPUT_FILE [options]
 ```
 
 Example:
-
 ```bash
 python3 mermaid_to_tikz.py location.mmd -o location.tex --arrow-length 1.5 --row-spacing 1.35
 ```
@@ -44,11 +42,11 @@ python3 mermaid_to_tikz.py location.mmd -o location.tex --arrow-length 1.5 --row
 
 <table>
   <tr>
-    <th>Mermaid Markdown</th>
-    <th>Rendered Output</th>
+    <th width="50%">Mermaid Markdown</th>
+    <th width="50%">Rendered Output</th>
   </tr>
   <tr>
-    <td valign="top">
+    <td valign="top" width="50%">
       <pre><code>classDiagram
     direction BT
 
@@ -64,11 +62,11 @@ python3 mermaid_to_tikz.py location.mmd -o location.tex --arrow-length 1.5 --row
     }</code></pre>
       <div><a href="assets/example.mmd"><code>assets/example.mmd</code></a></div>
     </td>
-    <td valign="top" align="center">
-      <a href="assets/example.png">
-        <img src="assets/example.png" alt="Rendered example diagram" width="420">
+    <td valign="top" align="center" width="50%">
+      <a href="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png">
+        <img src="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png" alt="Rendered example diagram" width="100%">
       </a>
-      <div><a href="assets/example.png"><code>assets/example.png</code></a></div>
+      <div><a href="https://raw.githubusercontent.com/AmroAbdrabo/mermaid-to-tikz/main/assets/example.png"><code>assets/example.png</code></a></div>
     </td>
   </tr>
 </table>
