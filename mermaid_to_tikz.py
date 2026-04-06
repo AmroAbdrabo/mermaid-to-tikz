@@ -355,6 +355,19 @@ def generate_tikz(
 \definecolor{{umlheader}}{{RGB}}{{220, 235, 252}}
 \renewcommand{{\arraystretch}}{{{row_spacing:.2f}}}
 
+\newcommand{{\customC}}{{%
+    \tikz[baseline=(char.base)]{{
+        \node[
+            shape=circle,
+            draw=blue!80!black,
+            fill=blue!15,
+            text=blue,
+            thick,
+            inner sep=1pt,
+            font=\sffamily\bfseries\footnotesize
+        ] (char) {{C}};
+    }}%
+}}
 
 
 \newcommand{{\customM}}{{%
