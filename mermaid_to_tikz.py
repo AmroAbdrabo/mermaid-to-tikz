@@ -369,6 +369,19 @@ def generate_tikz(
     }}%
 }}
 
+\newcommand{{\customF}}{{%
+    \tikz[baseline=(char.base)]{{
+        \node[
+            shape=circle,
+            draw=orange!80!black,
+            fill=orange!15,
+            text=orange,
+            thick,
+            inner sep=1pt,
+            font=\sffamily\bfseries\footnotesize
+        ] (char) {{f}};
+    }}%
+}}
 
 \newcommand{{\customM}}{{%
     \tikz[baseline=(char.base)]{{
